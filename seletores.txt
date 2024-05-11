@@ -1,0 +1,16 @@
+--/ SELETORES /--
+
+Os indicativos abaixo são exemplos. Sempre iniciando a procura. Ignore as Aspas simples (')
+'*' -> Seleciona TUDO!!
+elem -> Seleciona os Elementos!!
+'.'class -> Seleciona as Classes!!
+'#'id -> Seleciona os Id's!!
+'['Atrib']' -> Seleciona os Atributos!!
+
+':' Pseudo-class
+'::' Pseudo-Elementos
+
+--/ COMBINAR SELETORES /--
+
+DIV + P ->> "Irmão" Adjacente   DIV ~ P ->> "Irmãos" de um mesmo "pai", mas não precisam estar obrigatóriamente um do lado do outro
+DIV > P ->> "Filho direto"      DIV (ESPAÇO) P ->> Qualquer Descendente
