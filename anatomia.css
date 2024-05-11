@@ -20,4 +20,17 @@
 /* Usando um pseudo-elemento */
 .seletor::first-letter{
     font-size: 150px;
+    font-weight: bold;
 }
+
+/* Qual o padrão de nomeclatura em CSS? */
+/* dash-case ou camelCase */
+
+/* 
+Mais comum ser utilizado dash-cash. 
+Não existe um "problema" em utilizar camelCase, mas, não será tão comum.
+
+O mais importante é ser CONSTANTE!!!!!. Não ficar mudando entre ambas.
+
+Forçar utilização em dash-cash.
+*/
