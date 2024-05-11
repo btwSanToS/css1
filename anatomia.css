@@ -1,5 +1,23 @@
 .seletor{
     color: #222;
-    font-size: 7000px;
+    font-size: 70px;
     text-align: center;
+    border: solid 3px #ff0000; 
+    /* Shorthand property ↑↑↑↑ */
+    font-family: Helvetica, sans-serif;
+    /* Funções ↓↓↓↓*/
+    width: calc(100% - 30px);
+    background-color: rgb(34, 100, 50);
+}
+
+/* Usando uma pseudo-classe */
+.seletor:hover{
+    background-color: white;
+    border: solid 3px black; 
+    color: black;
+}
+
+/* Usando um pseudo-elemento */
+.seletor::first-letter{
+    font-size: 150px;
 }
