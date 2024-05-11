@@ -4,12 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Origem CSS: Externo, Interno e Inline</title>
-    <style>
-        /* ... */
-    </style>
+    <link rel="stylesheet" href="origem.css">
+    <link rel="stylesheet" href="/css1/css/externo.css">
+    <!-- 
+        Se atentar!!!!
+        A PRIORIDADE será de acordo com o último apontador!
+        Nesse caso, o arquivo externo.css
+     -->
 </head>
 
-<body>
+<body style="background-color: coral;">
+    <!-- 
+        CSS in Line ↑↑↑↑
+        Se atentar e não utilizar. (Boas Práticas)
+        Style está no top em preferências.
+    -->
     <h1>E agora?</h1>
 </body>
 
