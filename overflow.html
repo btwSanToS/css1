@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Overflow</title>
@@ -9,9 +10,18 @@
             height: 100px;
             width: 260px;
             border: solid 3px;
+            overflow: hidden;
+            /* Trava tudo dentro da caixa. Não sendo visível fora dela */
+            /* overflow: scroll; */
+            /* Adiciona scrolls dentro da borda/caixa/etc */
+            overflow-x:scroll;
+            /* Overflow em eixo especifico. */
+            /* overflow-y: scroll; */
+
         }
     </style>
 </head>
+
 <body>
     <div>
         TudoFuncionaMuitoBemEmCSS!!!
@@ -19,4 +29,5 @@
         Já pensou qual será o comportamento padrão?
     </div>
 </body>
+
 </html>
