@@ -5,7 +5,41 @@
     <meta charset="UTF-8">
     <title>Position</title>
     <style>
-        /* ... */
+        div {
+            font-size: 60px;
+            padding: 30px;
+            border: solid 5px #222;
+        }
+
+        .static {
+            top: 100px;
+            left: 100px;
+            background-color: steelblue;
+        }
+
+        .fixed{
+            position: fixed;
+            right: 0px;
+            bottom: 30px;
+            background-color: rgb(235, 146, 130);
+        }
+
+        .relative1{
+            position: relative;
+            left: 50px;    
+            top: 1px;
+            /* O mesmo está a 5 px do último elemento, e não dá página. */
+            background-color: seagreen;
+        }
+
+        .absolute1{
+            position: absolute;
+            left: 410px;
+            top: 55px;
+            background-color: violet;
+             /* O ABSOLUTE é referente ao Viewport (Página inteira)*/
+
+        }
     </style>
 </head>
 
