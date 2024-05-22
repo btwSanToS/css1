@@ -78,7 +78,8 @@
             padding: 25px
         }
 
-        .menu a:hover {
+        .menu a:hover,
+        .menu a.selected {
             background-color: rgb(78, 190, 228);
         }
 
@@ -91,21 +92,21 @@
         .destaque {
             background-color: rgb(218, 23, 23);
         }
-        
-        @media(min-width: 741px){
-            .menu-toggle{
+
+        @media(min-width: 1005px) {
+            .menu-toggle {
                 display: none;
             }
         }
 
-        @media(max-width: 740px){
-            .menu{
+        @media(max-width: 830px) {
+            .menu {
                 display: none;
             }
         }
 
-        @media(max-width: 1005px){
-            .autenticacao{
+        @media(max-width: 1005px) {
+            .autenticacao {
                 display: none;
             }
         }
@@ -145,7 +146,15 @@
     </header>
 
     <script>
-        // ...
+        window.onhashchange = function (e) {
+            const oldURL = e.oldURL.split('#')[1]
+            const newURL = e.newURL.split('#')[1]
+            console.log(oldURL, newURL)
+            const oldLink = document.querySelector(`.menu [href='#${oldURL}']`)
+            const newLink = document.querySelector(`.menu [href='#${newURL}']`)
+            oldLink && oldLink.classList.remove('selected')
+            newLink && newLink.classList.add('selected')
+        }
     </script>
 </body>
 
