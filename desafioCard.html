@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <title>Desafio Card</title>
     <style>
-        .curso{
+        .curso {
             float: left;
+            vertical-align: top;
+            /* Vertical-align para casos de imagens modificarem o visual do site. */
             font-family: Verdana, sans-serif;
             border: solid 1px #CCC;
             box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
@@ -15,15 +17,18 @@
             margin: 5px 20px;
             padding: 5px;
         }
-        .curso img{
+
+        .curso img {
             width: 100%;
             max-height: 50%;
         }
-        .curso-info{
+
+        .curso-info {
             padding: 10px;
             height: 90px;
             overflow: hidden;
         }
+
         .curso-info h4 {
             font-size: 1.4em;
             font-weight: 100;
@@ -35,12 +40,12 @@
             padding: 10px;
         }
 
-        .preco-de{
+        .preco-de {
             text-decoration: line-through;
             color: firebrick;
         }
 
-        .preco-por{
+        .preco-por {
             font-size: 1.4em;
             font-weight: bold;
             color: green;
