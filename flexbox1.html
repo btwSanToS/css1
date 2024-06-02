@@ -16,8 +16,28 @@
         }
 
         .flex-container {
-            display: flex;
+            display: flex; 
+            /*Perdeu espaço para o flex-direction, por conta da ordem.*/
             flex-direction: column;
+            flex-direction: column-reverse; 
+            /*Modificando para contagem inversa*/
+            flex-direction: row-reverse;
+            /*Invertido. Direta -> Esquerda*/
+            flex-direction: row;
+            /*Padrão Esquerda -> Direita*/
+            width: 50%;
+            /*Pode ocorrer OVERFLOW!!!!*/
+            flex-wrap: wrap;
+            /*Wrap irá utilizar uma QUEBRA DE LINHA para Overflow*/
+            flex-wrap: wrap-reverse;
+            /*Invertido. Quebra irá para cima.*/
+            flex-flow: row wrap;
+            /*Direction + Wrap*/
+            height: 200px;
+            flex-flow: column-reverse;
+            /*Ocasiona overflow e por estar invertido, não mostrará pois "sumirá" da página*/
+            flex-flow: column-reverse wrap;
+            /*Invertido com quebra de*/
         }
     </style>
 </head>
