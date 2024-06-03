@@ -6,15 +6,17 @@
     <title>Flexbox #03</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        div{
+        div {
             border: solid 5px;
             font-size: 40px;
         }
-        .flex-container div{
+
+        .flex-container div {
             box-sizing: border-box;
             flex-basis: 100px;
         }
-        .flex-container{
+
+        .flex-container {
             display: flex;
             flex-direction: row;
             width: 300px;
@@ -22,11 +24,11 @@
             /*Por conta do Shrink, ele irá crescer sempre mais q os outros.
             A conta é feita pela multiplicação do valor inserido*/
         }
-        .flex-container div:nth-child(4){
+
+        .flex-container div:nth-child(4) {
             /*grow, shrink, basis ---> Ordem*/
             flex: 3 6 100px;
         }
-        
     </style>
 </head>
 
