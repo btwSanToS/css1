@@ -1,10 +1,9 @@
 * {
   margin: 0;
 }
-body{
-    background-color: rgb(79, 248, 240);
-    padding: 16px;
-    height: 500px;
+body {
+  background-color: rgb(79, 248, 240);
+  padding-top: 10px;
 }
 /* Criação Box */
 .bloco-1 {
@@ -33,8 +32,11 @@ body{
   border-radius: 16px;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    
+.container {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
