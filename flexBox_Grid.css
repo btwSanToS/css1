@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+}
+/* Criação Box */
+.bloco-1 {
+  background-color: rgb(230, 67, 67);
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 16px;
+}
+
+.bloco-2 {
+  background-color: rgb(86, 75, 233);
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 16px;
+}
+.bloco-3 {
+  background-color: rgb(60, 196, 94);
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 16px;
+}
