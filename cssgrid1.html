@@ -33,6 +33,17 @@
             grid-template-columns: 3fr 6fr 3fr;
             grid-template-rows: 50% 25% 12.5% 10%;
             grid-template-rows: 100px 1fr;
+            /* 
+            1* linha terá 100px
+            2* linha terá 1 fragmento
+            3* e 4* com o espaço restante de divididos de forma igualitária.    
+            */
+            grid-template-rows: 100px auto;
+            /* 
+            Neste caso, será utilizado da seguinte maneira.
+            A 1*Linha terá 100px (informados no código)
+            Os demais, serão ajustados automáticamente e de forma que sejam iguais. 
+            */
         }
     </style>
 </head>
