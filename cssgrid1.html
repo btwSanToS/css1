@@ -45,6 +45,33 @@
             Os demais, serão ajustados automáticamente e de forma que sejam iguais. 
             */
         }
+        .d8{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-row-end: span 2;
+            /* 
+            O span pode ser visto como, a soma diante ao start.
+            Nesse caso, 3 + 2 encerrando na linha 5 */
+        }
+
+        .d10, .d11{
+            /* podem se sobrepor */
+            grid-column-start: 1;
+            grid-column-end: span 2;
+            /* A partir dos códigos abaixo, irão se sobrepor, por estarem na mesma linha. */
+            grid-row-start: 5;
+            grid-row-end: span 1;
+        }
+
+        /* Para casos de sobreposição. */
+        /* z-index é a PROFUNDIDADE dos elementos na página.
+        Insira a quantidade, ***maior para sempre sobrepor*** */
+        .d10{
+            z-index: 10;
+
+        }
     </style>
 </head>
 
