@@ -26,6 +26,13 @@
             grid-template-columns:
                 [incio] 1fr [metade-1] 1fr [metade-2] 1fr [fim];
             grid-template-rows: repeat(3, 1fr);
+
+            /* Gaps são espaçoes entre as linhas e colunas. Informados com píxeis. */
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            /* Shortcut para gaps:
+            ROWS, COLUMNS */
+            grid-gap: 50px 20px;
         }
 
         .d1 {
