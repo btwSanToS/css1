@@ -11,7 +11,7 @@
             height: calc(100% - 40px);
             background-color: lightgray;
         }
-        
+
         div {
             display: flex;
             align-items: center;
@@ -19,6 +19,25 @@
             font-size: 30px;
             border: solid 5px dodgerblue;
             background: #fff;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns:
+                [incio] 1fr [metade-1] 1fr [metade-2] 1fr [fim];
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .d1 {
+            grid-column-start: 1;
+            grid-column-end: metade-1;
+            grid-column: metade-2 / fim;
+            /* A maneira acima, é possível utilizar apenas uma linha de comando, 
+               para informar em quais quadrantes ficará a Box */
+            grid-row:1 / span 2;
+            /* Shortcut para Área: 
+            row-start, column-start, row-end, column-end    */
+            grid-area: 1 / 1 / 3 / 3;
         }
     </style>
 </head>
